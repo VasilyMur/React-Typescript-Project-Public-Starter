@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Форма */
+  form {
+    margin-bottom: 52px;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 520px;
+  }
+  
+  form input {
+    width: 50%;
+    padding: 10px;
+    line-height: 1;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 0;
+    background: #fff;
+  }
+  
+  form input:focus {
+    outline: 0;
+    background: #fef2de;
+  }
+  
+  form input:last-of-type {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+  }
+  
+  button,
+  input[type=submit] {
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border: none;
+    background: #f00;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Карточка пиццы*/
+  .pizza {
+    background: white;
+    border: 1px solid #ededed;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.09);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .pizza img {
+    width: 240px;
+    height: 140px;
+    object-fit: contain;
+  }
+  
+  .pizza span {
+    background: #ff0000;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    line-height: 1;
+    font-size: 27px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .pizza .pizza-controls {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .pizza svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #392e4a;
+  }
+  
+  .pizza h2 {
+    margin: 0 40px;
+    text-align: center;
+    margin-top: -1rem;
+    background: red;
+    display: inline;
+    line-height: 1.3;
+    font-size: 27px;
+    color: white;
+    padding: 0 7px;
+  }
+  
+  /* Форма редактирования */
+  .edit-form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .edit-form input {
+    width: 100%;
+  }
+  
+  /* Пагинация */
+  .pagination {
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    margin: 52px 0 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+  }
+  
+  .pagination > * {
+    margin: 0;
+    padding: 15px 20px;
+    border-right: 1px solid #e1e1e1;
+  }
+  .pagination :first-child {
+    cursor: pointer;
+  }
+  .pagination :last-child {
+    cursor: pointer;
+    border-right: 0;
+  }
+  .pagination .disabled {
+    pointer-events: none;
+    color:#f2f2f2;
+  }
